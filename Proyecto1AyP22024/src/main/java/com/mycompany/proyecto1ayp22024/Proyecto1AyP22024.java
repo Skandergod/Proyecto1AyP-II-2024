@@ -3,15 +3,18 @@
  */
 
 package com.mycompany.proyecto1ayp22024;
-
 /**
  *
  * @author theda
  */
 public class Proyecto1AyP22024 {
 
+    public static Proyecto1 start;
+    
     public static void main(String[] args) {
-        System.out.println("First Commit!");
+        
+        start = new Proyecto1();
+        start.run();
         
     }
 }
