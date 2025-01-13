@@ -13,6 +13,7 @@ public class Proyecto1AyP22024 {
     
     public static void main(String[] args) {
         
+        System.out.println(Integer.MAX_VALUE);
         start = new Proyecto1();
         start.run();
         
