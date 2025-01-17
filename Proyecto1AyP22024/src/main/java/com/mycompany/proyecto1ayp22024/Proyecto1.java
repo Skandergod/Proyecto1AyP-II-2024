@@ -63,46 +63,81 @@ public class Proyecto1
         
     }
     
-    public int HacerMultiplicador(int y)
+    public int HacerMultiplicador(int x)
     {
         int multiplicator = 1;
-        
-        for(int i = y; i < 4; ++i)
+        for(int i = x; i < 4; ++i)
         {
             multiplicator = multiplicator * 10;
         }
-        
-        return y;
+        return multiplicator;
     }
      
+    public int ExtraerNumero(int value, int multiplicador)
+    {
+        if(multiplicador == 1)
+        {
+            return value%10;
+        }
+        if(multiplicador == 10)
+        {
+            return (value/10)%10;
+        }  
+        if(multiplicador == 100)
+        {
+            return (value/100)%10;
+        }
+        if(multiplicador == 1000)
+        {
+            return (value/1000)%10;
+        }
+        if(multiplicador == 10000)
+        {
+            return (value/10000)%10;
+        }
+        return 1;
+    }
     
     int AccederElemento(int x, int y, int value, int mode)
     {
-        if( x == 0 )
+        int multiplicador = 0;
+        if( y == 0 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
-                f12 = f12;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
                 
                 if(mode == 1)
                 {
-                    
+                    f12 = f12 + (value * multiplicador);
+                    f12 = f12 - multiplicador;
+                    return 0;
                 }
                 else
                 {
-                    
-                }
-                
+                    return ExtraerNumero(f12, multiplicador);
+                }  
             }
             else
             {
-                f11 = f11;
-            }
-            
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f11 = f11 + (value * multiplicador);
+                    f11 = f11 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f11, multiplicador);
+                }
+            }     
         }
-        if( x == 1 )
+        
+        if( y == 1 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f22 = f22;
             }
@@ -111,9 +146,9 @@ public class Proyecto1
                 f21 = f21;
             }
         }
-        if( x == 2 )
+        if( y == 2 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f32 = f32;
             }
@@ -122,9 +157,9 @@ public class Proyecto1
                 f31 = f31;
             }
         }
-        if( x == 3 )
+        if( y == 3 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f42 = f42;
             }
@@ -133,9 +168,9 @@ public class Proyecto1
                 f41 = f41;
             }
         }
-        if( x == 4 )
+        if( y == 4 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f52 = f52;
             }
@@ -144,9 +179,9 @@ public class Proyecto1
                 f51 = f51;
             }
         }
-        if( x == 5 )
+        if( y == 5 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f62 = f62;
             }
@@ -155,9 +190,9 @@ public class Proyecto1
                 f61 = f61;
             }
         }
-        if( x == 6 )
+        if( y == 6 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f72 = f72;
             }
@@ -166,9 +201,9 @@ public class Proyecto1
                 f71 = f71;
             }
         }
-        if( x == 7 )
+        if( y == 7 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f82 = f82;
             }
@@ -177,9 +212,9 @@ public class Proyecto1
                 f81 = f81;
             }
         }
-        if( x == 8 )
+        if( y == 8 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f92 = f92;
             }
@@ -188,9 +223,9 @@ public class Proyecto1
                 f91 = f91;
             }
         }
-        if( x == 9 )
+        if( y == 9 )
         {
-            if(y >= 5)
+            if(x >= 5)
             {
                 f102 = f102;
             }
