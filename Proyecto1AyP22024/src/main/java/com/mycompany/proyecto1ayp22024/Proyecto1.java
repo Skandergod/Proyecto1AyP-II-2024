@@ -139,99 +139,292 @@ public class Proyecto1
         {
             if(x >= 5)
             {
-                f22 = f22;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                
+                if(mode == 1)
+                {
+                    f22 = f22 + (value * multiplicador);
+                    f22 = f22 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f22, multiplicador);
+                } 
             }
             else
             {
-                f21 = f21;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f21 = f21 + (value * multiplicador);
+                    f21 = f21 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f21, multiplicador);
+                }
             }
         }
         if( y == 2 )
         {
             if(x >= 5)
             {
-                f32 = f32;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                
+                if(mode == 1)
+                {
+                    f32 = f32 + (value * multiplicador);
+                    f32 = f32 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f32, multiplicador);
+                }
             }
             else
             {
-                f31 = f31;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f31 = f31 + (value * multiplicador);
+                    f31 = f31 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f31, multiplicador);
+                }
             }
         }
         if( y == 3 )
         {
             if(x >= 5)
             {
-                f42 = f42;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                
+                if(mode == 1)
+                {
+                    f42 = f42 + (value * multiplicador);
+                    f42 = f42 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f42, multiplicador);
+                }
             }
             else
             {
-                f41 = f41;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f41 = f41 + (value * multiplicador);
+                    f41 = f41 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f41, multiplicador);
+                }
             }
         }
         if( y == 4 )
         {
             if(x >= 5)
             {
-                f52 = f52;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                
+                if(mode == 1)
+                {
+                    f52 = f52 + (value * multiplicador);
+                    f52 = f52 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f52, multiplicador);
+                }
             }
             else
             {
-                f51 = f51;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f51 = f51 + (value * multiplicador);
+                    f51 = f51 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f51, multiplicador);
+                }
             }
         }
         if( y == 5 )
         {
             if(x >= 5)
             {
-                f62 = f62;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f62 = f62 + (value * multiplicador);
+                    f62 = f62 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f62, multiplicador);
+                }
             }
             else
             {
-                f61 = f61;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f61 = f61 + (value * multiplicador);
+                    f61 = f61 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f61, multiplicador);
+                }
             }
         }
         if( y == 6 )
         {
             if(x >= 5)
             {
-                f72 = f72;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f72 = f72 + (value * multiplicador);
+                    f72 = f72 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f72, multiplicador);
+                }
             }
             else
             {
-                f71 = f71;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f71 = f71 + (value * multiplicador);
+                    f71 = f71 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f71, multiplicador);
+                }
             }
         }
         if( y == 7 )
         {
             if(x >= 5)
             {
-                f82 = f82;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f82 = f82 + (value * multiplicador);
+                    f82 = f82 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f82, multiplicador);
+                }
             }
             else
             {
-                f81 = f81;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f81 = f81 + (value * multiplicador);
+                    f81 = f81 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f81, multiplicador);
+                }
             }
         }
         if( y == 8 )
         {
             if(x >= 5)
             {
-                f92 = f92;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f92 = f92 + (value * multiplicador);
+                    f92 = f92 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f92, multiplicador);
+                }
             }
             else
             {
-                f91 = f91;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f91 = f91 + (value * multiplicador);
+                    f91 = f91 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f91, multiplicador);
+                }
             }
         }
         if( y == 9 )
         {
             if(x >= 5)
             {
-                f102 = f102;
+                x = x - 5;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f102 = f102 + (value * multiplicador);
+                    f102 = f102 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f102, multiplicador);
+                }
             }
             else
             {
-                f101 = f101;
+                multiplicador = HacerMultiplicador(x);
+                if(mode == 1)
+                {
+                    f101 = f101 + (value * multiplicador);
+                    f101 = f101 - multiplicador;
+                    return 0;
+                }
+                else
+                {
+                    return ExtraerNumero(f101, multiplicador);
+                }
             }
         }
          
