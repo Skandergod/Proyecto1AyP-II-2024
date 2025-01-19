@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyecto1ayp22024;
 
+import java.util.Scanner;
+
 /*
     Dato Importante, el laberinto es guardado en variables enteras, con los valores de 1 a 9
     representando objetos del enunciado, se guardan de la sgte manera:
@@ -20,9 +22,10 @@ public class Proyecto1
 
     public int f11, f21, f31, f41, f51, f61, f71, f81, f91, f101;
     public int f12, f22, f32, f42, f52, f62, f72, f82, f92, f102;
-    public int Pvida;
+    public int Jvida;
     public int salida;
     public int N, M;
+    public int Jx, Jy;
     public int NElementos;
     
     
@@ -51,16 +54,13 @@ public class Proyecto1
         f92 = 11111;
         f102 = 11111;
         
-        Pvida = 0;
+        Jvida = 0;
         N = 0; M = 0;
         salida = 299;
         NElementos = 0;
         
-    }
-    
-    public void guardarElemento(int x, int y, int value)
-    {
-        
+        Jx = 0;
+        Jy = 0;
     }
     
     public int HacerMultiplicador(int x)
@@ -431,8 +431,79 @@ public class Proyecto1
         return 0;
     }
     
-    public void run()
+    void Movimiento(char movimiento)
     {
+        if(movimiento == 'W')
+        {
+            if( !(Jy + 1 == N) )
+            Jy++;
+            
+        }
+        
+        if(movimiento == 'S')
+        {
+            if( !(Jy - 1 == 0) )
+            Jy--;           
+        }
+        
+        if(movimiento == 'D')
+        {
+            if( !(Jx + 1 == M) )
+            Jx++;           
+        }
+        
+        if(movimiento == 'A')
+        {
+            if( !(Jx - 1 == 0) )
+            Jx--;           
+        }
+          
+    }
+    
+    public void run(){
+        
+        Scanner sc = new Scanner(System.in);
+        char c = 'a';
+        Jvida = sc.nextInt();
+        N = sc.nextInt(); M = sc.nextInt();
+        NElementos = sc.nextInt();
+        
+        for(int i = 0; i < NElementos; i++)
+        {
+            c = sc.next().charAt(0);
+            
+            if(c == 'E')
+            {
+                c = c;
+            }
+            if(c == 'S')
+            {
+                c = c;
+            }
+            if(c == 'T')
+            {
+                c = c;
+            }
+            if(c == 'X')
+            {
+                c = c;
+            }
+            if(c == '.')
+            {
+                c = c;
+            }
+            if(c == '#')
+            {
+                c = c;
+            }
+            if(c == 'P')
+            {
+                c = c;
+            }
+            
+            
+        }
+        
         
     }
     
