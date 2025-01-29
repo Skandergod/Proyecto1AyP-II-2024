@@ -22,6 +22,7 @@ public class Proyecto1
 
     public int f11, f21, f31, f41, f51, f61, f71, f81, f91, f101;
     public int f12, f22, f32, f42, f52, f62, f72, f82, f92, f102;
+    public int JvidaMax;
     public int Jvida;
     public int salida;
     public int N, M;
@@ -678,6 +679,10 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts1 = 0;
+                
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                    
                 TsFound++;
                 TsTotal--;
             }
@@ -688,6 +693,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts2 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -698,6 +706,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts3 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -708,6 +719,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts4 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -718,6 +732,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts5 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -728,6 +745,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts6 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -738,6 +758,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts7 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -748,6 +771,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts8 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -758,6 +784,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts9 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -768,6 +797,9 @@ public class Proyecto1
             {
                 Jvida = Jvida + 20;
                 Ts10 = 0;
+                if(Jvida > JvidaMax)
+                    Jvida = JvidaMax;
+                
                 TsFound++;
                 TsTotal--;
             }
@@ -1089,6 +1121,7 @@ public class Proyecto1
         int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
         char c = 'a';
         Jvida = sc.nextInt();
+        JvidaMax = Jvida;
         M = sc.nextInt(); N = sc.nextInt();
         NElementos = sc.nextInt();
         
